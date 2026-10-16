@@ -1,0 +1,753 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\งาน\\project\\Software Testing Playwright\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "D:\\งาน\\project\\Software Testing Playwright\\playwright.config.ts",
+    "rootDir": "D:/งาน/project/Software Testing Playwright/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/งาน/project/Software Testing Playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/งาน/project/Software Testing Playwright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\งาน\\project\\Software Testing Playwright\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "D:\\งาน\\project\\Software Testing Playwright\\tests",
+        "snapshotDir": "D:\\งาน\\project\\Software Testing Playwright\\tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "https://www.saucedemo.com",
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure",
+          "video": "retain-on-failure",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "integration\\IT-01.spec.ts",
+      "file": "integration/IT-01.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "IT-01: top-down REAL Login -> browser-level Inventory STUB",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "description",
+                  "description": "ทดสอบ Login จริงร่วมกับ Inventory Stub ที่จำลองด้วย page.setContent()",
+                  "location": {
+                    "file": "D:\\งาน\\project\\Software Testing Playwright\\tests\\integration\\IT-01.spec.ts",
+                    "line": 3,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1195,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Login ผ่านหน้าเว็บไซต์จริง",
+                      "duration": 722
+                    },
+                    {
+                      "title": "สร้าง Inventory Stub",
+                      "duration": 19
+                    },
+                    {
+                      "title": "ตรวจสอบผลจาก Stub",
+                      "duration": 63
+                    }
+                  ],
+                  "startTime": "2026-10-16T07:14:16.961Z",
+                  "annotations": [
+                    {
+                      "type": "description",
+                      "description": "ทดสอบ Login จริงร่วมกับ Inventory Stub ที่จำลองด้วย page.setContent()",
+                      "location": {
+                        "file": "D:\\งาน\\project\\Software Testing Playwright\\tests\\integration\\IT-01.spec.ts",
+                        "line": 3,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "aeaf4dcca87754465641-6a93853910bbaba5daba",
+          "file": "integration/IT-01.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "integration\\IT-02.spec.ts",
+      "file": "integration/IT-02.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "IT-02: DRIVER login state -> REAL Inventory and Cart",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "description",
+                  "description": "ใช้ Driver เตรียมสถานะ Login เพื่อทดสอบ Inventory และ Cart จริง",
+                  "location": {
+                    "file": "D:\\งาน\\project\\Software Testing Playwright\\tests\\integration\\IT-02.spec.ts",
+                    "line": 18,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1086,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "สร้าง Driver และเปิด Inventory",
+                      "duration": 702
+                    },
+                    {
+                      "title": "ตรวจสอบ Inventory จริง",
+                      "duration": 14
+                    },
+                    {
+                      "title": "เพิ่มสินค้า 2 รายการ",
+                      "duration": 128
+                    },
+                    {
+                      "title": "ตรวจสอบสินค้าใน Cart",
+                      "duration": 117
+                    }
+                  ],
+                  "startTime": "2026-10-16T07:14:18.711Z",
+                  "annotations": [
+                    {
+                      "type": "description",
+                      "description": "ใช้ Driver เตรียมสถานะ Login เพื่อทดสอบ Inventory และ Cart จริง",
+                      "location": {
+                        "file": "D:\\งาน\\project\\Software Testing Playwright\\tests\\integration\\IT-02.spec.ts",
+                        "line": 18,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4fa6bfb55dc95b1f15b3-0a804e4898f3b2703bff",
+          "file": "integration/IT-02.spec.ts",
+          "line": 18,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "system\\ST-01.spec.ts",
+      "file": "system/ST-01.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "ST-01: complete purchase of two products",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "description",
+                  "description": "ทดสอบการซื้อ Backpack และ Bike Light ตั้งแต่ Login จนสั่งซื้อสำเร็จ",
+                  "location": {
+                    "file": "D:\\งาน\\project\\Software Testing Playwright\\tests\\system\\ST-01.spec.ts",
+                    "line": 3,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1294,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Login และตรวจสอบ Inventory",
+                      "duration": 526
+                    },
+                    {
+                      "title": "เพิ่มสินค้าสองรายการ",
+                      "duration": 106
+                    },
+                    {
+                      "title": "ตรวจสอบ Cart",
+                      "duration": 101
+                    },
+                    {
+                      "title": "กรอก Checkout Information",
+                      "duration": 179
+                    },
+                    {
+                      "title": "ตรวจสอบ Overview และสั่งซื้อ",
+                      "duration": 137
+                    },
+                    {
+                      "title": "ตรวจสอบ Order Complete",
+                      "duration": 43
+                    }
+                  ],
+                  "startTime": "2026-10-16T07:14:19.811Z",
+                  "annotations": [
+                    {
+                      "type": "description",
+                      "description": "ทดสอบการซื้อ Backpack และ Bike Light ตั้งแต่ Login จนสั่งซื้อสำเร็จ",
+                      "location": {
+                        "file": "D:\\งาน\\project\\Software Testing Playwright\\tests\\system\\ST-01.spec.ts",
+                        "line": 3,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b437a3ea838a6734331f-68d25959565fafbf0274",
+          "file": "system/ST-01.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "system\\ST-02.spec.ts",
+      "file": "system/ST-02.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "ST-02: checkout validation and recovery",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "description",
+                  "description": "ตรวจสอบ Checkout Validation และการแก้ไขข้อมูลจนสั่งซื้อสำเร็จ",
+                  "location": {
+                    "file": "D:\\งาน\\project\\Software Testing Playwright\\tests\\system\\ST-02.spec.ts",
+                    "line": 3,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1933,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Login เพิ่มสินค้า และเปิด Checkout",
+                      "duration": 1226
+                    },
+                    {
+                      "title": "ตรวจสอบ First Name is required",
+                      "duration": 94
+                    },
+                    {
+                      "title": "ตรวจสอบ Last Name is required",
+                      "duration": 86
+                    },
+                    {
+                      "title": "ตรวจสอบ Postal Code is required",
+                      "duration": 106
+                    },
+                    {
+                      "title": "แก้ไขข้อมูลและสั่งซื้อสำเร็จ",
+                      "duration": 220
+                    }
+                  ],
+                  "startTime": "2026-10-16T07:14:21.122Z",
+                  "annotations": [
+                    {
+                      "type": "description",
+                      "description": "ตรวจสอบ Checkout Validation และการแก้ไขข้อมูลจนสั่งซื้อสำเร็จ",
+                      "location": {
+                        "file": "D:\\งาน\\project\\Software Testing Playwright\\tests\\system\\ST-02.spec.ts",
+                        "line": 3,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "56c0a83e2e23481adf32-fcdcf2d10841c1c1d778",
+          "file": "system/ST-02.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "unit\\UT-01.spec.ts",
+      "file": "unit/UT-01.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "UT-01: Login Form Validation",
+          "file": "unit/UT-01.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "UT-01.1: empty username and password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "description",
+                      "description": "ตรวจสอบการ Login เมื่อไม่กรอก Username และ Password",
+                      "location": {
+                        "file": "D:\\งาน\\project\\Software Testing Playwright\\tests\\unit\\UT-01.spec.ts",
+                        "line": 6,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 771,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "เปิดหน้า Login",
+                          "duration": 448
+                        },
+                        {
+                          "title": "ส่งฟอร์มโดยไม่กรอกข้อมูล",
+                          "duration": 59
+                        },
+                        {
+                          "title": "ตรวจสอบ Error และ URL",
+                          "duration": 38
+                        }
+                      ],
+                      "startTime": "2026-10-16T07:14:23.067Z",
+                      "annotations": [
+                        {
+                          "type": "description",
+                          "description": "ตรวจสอบการ Login เมื่อไม่กรอก Username และ Password",
+                          "location": {
+                            "file": "D:\\งาน\\project\\Software Testing Playwright\\tests\\unit\\UT-01.spec.ts",
+                            "line": 6,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8c739bc89a6720d0c629-54f4b4234188f85dc805",
+              "file": "unit/UT-01.spec.ts",
+              "line": 6,
+              "column": 7
+            },
+            {
+              "title": "UT-01.2: missing password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "description",
+                      "description": "ตรวจสอบการ Login เมื่อกรอก Username แต่ไม่กรอก Password",
+                      "location": {
+                        "file": "D:\\งาน\\project\\Software Testing Playwright\\tests\\unit\\UT-01.spec.ts",
+                        "line": 23,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 940,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "เปิดหน้า Login และกรอก Username",
+                          "duration": 432
+                        },
+                        {
+                          "title": "กด Login โดยไม่กรอก Password",
+                          "duration": 72
+                        },
+                        {
+                          "title": "ตรวจสอบ Error และ URL",
+                          "duration": 22
+                        }
+                      ],
+                      "startTime": "2026-10-16T07:14:23.848Z",
+                      "annotations": [
+                        {
+                          "type": "description",
+                          "description": "ตรวจสอบการ Login เมื่อกรอก Username แต่ไม่กรอก Password",
+                          "location": {
+                            "file": "D:\\งาน\\project\\Software Testing Playwright\\tests\\unit\\UT-01.spec.ts",
+                            "line": 23,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8c739bc89a6720d0c629-416b2ace0476596fcfd7",
+              "file": "unit/UT-01.spec.ts",
+              "line": 23,
+              "column": 7
+            },
+            {
+              "title": "UT-01.3: invalid login details",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "description",
+                      "description": "ตรวจสอบการ Login เมื่อกรอก Username และ Password ที่ไม่ถูกต้อง",
+                      "location": {
+                        "file": "D:\\งาน\\project\\Software Testing Playwright\\tests\\unit\\UT-01.spec.ts",
+                        "line": 40,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 923,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "เปิดหน้า Login และกรอกข้อมูลที่ไม่ถูกต้อง",
+                          "duration": 467
+                        },
+                        {
+                          "title": "กด Login",
+                          "duration": 48
+                        },
+                        {
+                          "title": "ตรวจสอบ Error และ URL",
+                          "duration": 17
+                        }
+                      ],
+                      "startTime": "2026-10-16T07:14:24.799Z",
+                      "annotations": [
+                        {
+                          "type": "description",
+                          "description": "ตรวจสอบการ Login เมื่อกรอก Username และ Password ที่ไม่ถูกต้อง",
+                          "location": {
+                            "file": "D:\\งาน\\project\\Software Testing Playwright\\tests\\unit\\UT-01.spec.ts",
+                            "line": 40,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8c739bc89a6720d0c629-40c069adb5013c050578",
+              "file": "unit/UT-01.spec.ts",
+              "line": 40,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "unit\\UT-02.spec.ts",
+      "file": "unit/UT-02.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "UT-02: product button state Add to cart -> Remove -> Add to cart",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "description",
+                  "description": "ตรวจสอบสถานะปุ่ม Add to cart และ Remove รวมถึง Cart Badge",
+                  "location": {
+                    "file": "D:\\งาน\\project\\Software Testing Playwright\\tests\\unit\\UT-02.spec.ts",
+                    "line": 3,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1177,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Login เข้าสู่ระบบ",
+                      "duration": 676
+                    },
+                    {
+                      "title": "ตรวจสอบปุ่มก่อนเพิ่มสินค้า",
+                      "duration": 58
+                    },
+                    {
+                      "title": "เพิ่มสินค้าเข้า Cart",
+                      "duration": 139
+                    },
+                    {
+                      "title": "ลบสินค้าออกจาก Cart",
+                      "duration": 65
+                    }
+                  ],
+                  "startTime": "2026-10-16T07:14:25.741Z",
+                  "annotations": [
+                    {
+                      "type": "description",
+                      "description": "ตรวจสอบสถานะปุ่ม Add to cart และ Remove รวมถึง Cart Badge",
+                      "location": {
+                        "file": "D:\\งาน\\project\\Software Testing Playwright\\tests\\unit\\UT-02.spec.ts",
+                        "line": 3,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6c91503e0156bd8f2507-e7443e8816072dd5f9a1",
+          "file": "unit/UT-02.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-16T07:14:16.437Z",
+    "duration": 10642.915,
+    "expected": 8,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
